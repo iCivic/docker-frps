@@ -1,0 +1,32 @@
+使用docker搭建frp服务器
+https://www.cnblogs.com/thyong/p/8509040.html
+主流的知名的开源内网穿透软件强烈推荐
+https://segmentfault.com/a/1190000019788036
+基于docker搭建openvpn
+http://www.acaiblog.cn/2018/12/05/%E5%9F%BA%E4%BA%8Edocker%E6%90%AD%E5%BB%BAopenvpn/
+手把手教你用frp实现内网穿透，进行远程桌面和http访问
+https://www.jianshu.com/p/a6e9627dbe29
+https://hub.docker.com/r/fatedier/frp
+https://github.com/clangcn/frp-docker
+docker错误一览
+https://www.jianshu.com/p/605a7c0e1d0f
+使用WinSW 将 exe 创建成Windows下面 service的方法 (将nginx创建成 services)
+https://www.cnblogs.com/jinanxiaolaohu/p/9695761.html
+winsw说明
+https://www.jianshu.com/p/1ee1a8526cc6
+一款很好用的内网穿透工具--FRP
+https://www.jianshu.com/p/00c79df1aaf0
+通过frp所在机器的http/socks5代理访问外网，以方便访问公司的项目
+https://bob.kim/articles/2018/06/27/1530088995977.html
+frp内网穿透
+https://www.jianshu.com/p/a621556fc07b
+使用frp进行内网穿透
+https://sspai.com/post/52523
+
+docker run -d \
+--restart=always \
+--network host \
+-v $PWD/data:/data \
+--hostname=frps \
+--name frps \
+idu/frps:0.29.0
